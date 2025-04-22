@@ -10,7 +10,7 @@ data= json.loads(content)
 
 score=0
 for index,que in enumerate(data):
-    print(index+1, ".", que["question_text"])
+    print(index+1, "-", que["question_text"])
     for index,option in enumerate(que["options"]):
         print (index+1, ".", option)
     user_choice=int(input("your option: "))
